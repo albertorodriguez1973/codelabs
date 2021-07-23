@@ -25,15 +25,8 @@ class Authentication extends StatelessWidget {
   final ApplicationLoginState loginState;
   final String? email;
   final void Function() startLoginFlow;
-  final void Function(
-    String email,
-    void Function(Exception e) error,
-  ) verifyEmail;
-  final void Function(
-    String email,
-    String password,
-    void Function(Exception e) error,
-  ) signInWithEmailAndPassword;
+  final void Function(String email, void Function(Exception e) error, ) verifyEmail;
+  final void Function(String email, String password, void Function(Exception e) error, ) signInWithEmailAndPassword;
   final void Function() cancelRegistration;
   final void Function(
     String email,
